@@ -1,4 +1,4 @@
-# c++
+# C
 Estudos com a linguagem de programação C++
 
 ## Sobre
