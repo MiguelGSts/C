@@ -2,16 +2,16 @@
 #include <locale.h>
 #include <stdlib.h>
 int topo(){
-	printf("-------------- \n");
-	printf("Estudos de C++ \n");
-	printf("-------------- \n");
+	printf("------------\n");
+	printf("Estudos de C\n");
+	printf("------------\n");
 }
 int main(){
 	//UTF-8
 	system("chcp 65001 > nul");
 	setlocale(LC_ALL, "Portuguese");
 	//------------------------------
-	//Variáveis
+	//Variï¿½veis
 	float n1, n2, n3, n4, med;
 	char nome[50], curso[150];
 	//------------------------------
@@ -34,15 +34,15 @@ int main(){
 	if (med >= 7){
 		system("CLS");
 		topo();
-		printf("O aluno %s do curso de %s está APROVADO. Sua nota foi: %.2f", nome, curso, med);
+		printf("O aluno %s do curso de %s estï¿½ APROVADO. Sua nota foi: %.2f", nome, curso, med);
 	}else if(med >= 5){
 		system("CLS");
 		topo();
-		printf("O aluno %s do curso de %s está de RECUPERAÇÃO. Sua nota foi: %.2f", nome, curso, med);
+		printf("O aluno %s do curso de %s estï¿½ de RECUPERAï¿½ï¿½O. Sua nota foi: %.2f", nome, curso, med);
 	}else{
 		system("CLS");
 		topo();
-		printf("O aluno %s do curso de %s está REPROVADO. Sua nota foi: %.2f", nome, curso, med);
+		printf("O aluno %s do curso de %s estï¿½ REPROVADO. Sua nota foi: %.2f", nome, curso, med);
 	}
 	
 	return 0;

@@ -2,16 +2,16 @@
 #include <locale.h>
 #include <stdlib.h>
 int topo(){
-	printf("-------------- \n");
-	printf("Estudos de C++ \n");
-	printf("-------------- \n");
+	printf("------------ \n");
+	printf("Estudos de C \n");
+	printf("------------ \n");
 }
 int main(){
 	//UTF-8
 	system("chcp 65001 > nul");
 	setlocale(LC_ALL, "Portuguese");
 	//------------------------------
-	//Variáveis
+	//Variï¿½veis
 	int idade;
 	//------------------------------
 	
@@ -21,19 +21,19 @@ int main(){
 	if(idade < 12){
 		system("CLS");
 		topo();
-		printf("Você é uma criança. \n");
+		printf("Vocï¿½ ï¿½ uma crianï¿½a. \n");
 	}else if(idade < 18){
 		system("CLS");
 		topo();
-		printf("Você é um adolescente. \n");
+		printf("Vocï¿½ ï¿½ um adolescente. \n");
 	}else if(idade < 65){
 		system("CLS");
 		topo();
-		printf("Você é um adulto. \n");
+		printf("Vocï¿½ ï¿½ um adulto. \n");
 	}else{
 		system("CLS");
 		topo();
-		printf("Você é um idoso. \n");
+		printf("Vocï¿½ ï¿½ um idoso. \n");
 	}
 	
 	printf("[Fim do programa]");
