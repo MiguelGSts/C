@@ -32,7 +32,6 @@ int main(){
 	
 	title();
 	printf("Informe o valor da compra: ");
-	scanf("%f", &valCompra);
 	if (scanf("%f", &valCompra) != 1){  //Validação de entrada
 		printf("\n[ENTRADA DE VALORES INVÁLIDA]\n");
 		return 1;
