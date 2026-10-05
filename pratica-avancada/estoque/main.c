@@ -15,22 +15,19 @@ int main(){
     #endif
 
     int op, n;
-    
+    prod *lista = NULL;
 
     do{
-    title();
-    
-    op = menu();
-    if(op == 1){
-        prod *lista = criarLista(&n);
-        if(lista == NULL){
-            return 1;
+        title();
+        
+        op = menu();
+        if(op == 1){
+            lista = criarLista(&n);
+            if(lista == NULL){
+                return 1;
+            }
+            cadProduto(lista, n);
         }
-        cadProduto(lista, n);
-    }
-
-
-
     }while(op != 5);
 
     return 0;
