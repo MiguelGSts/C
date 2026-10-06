@@ -15,5 +15,13 @@ prod *criarLista (int *n);
 
 void cadProduto(prod *lista, int n);
 
+void listaProd(prod *lista, int n);
+
+void limpaTela();
+
+void limpa_title();
+
+void buscaProd(prod *lista, int n);
+
 
 #endif

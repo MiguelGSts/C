@@ -27,6 +27,14 @@ int main(){
                 return 1;
             }
             cadProduto(lista, n);
+        }else if(op == 2 && lista != NULL){
+            limpa_title();
+            printf("\n=== Lista de produtos ===\n");
+            listaProd(lista, n);
+        }else if(op == 3 && lista != NULL){
+            limpa_title();
+            printf("\n=== Busca de produto ===\n");
+            buscaProd(lista, n);
         }
     }while(op != 5);
 
