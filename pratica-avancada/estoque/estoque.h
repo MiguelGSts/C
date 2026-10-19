@@ -11,6 +11,8 @@ void title();
 
 int menu();
 
+void erroLista();
+
 prod *criarLista (int *n);
 
 void cadProduto(prod *lista, int n);

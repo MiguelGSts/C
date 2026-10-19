@@ -23,6 +23,10 @@ int menu(){
     return opcao;
 }
 
+void erroLista(){
+        printf("[ERRO] Lista ausente!\n");
+        getchar();
+}
 prod *criarLista (int *n){
     int c;
     limpa_title();

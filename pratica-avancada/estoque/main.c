@@ -18,23 +18,35 @@ int main(){
     prod *lista = NULL;
 
     do{
+        inicio:
         title();
         
         op = menu();
-        if(op == 1){
-            lista = criarLista(&n);
-            if(lista == NULL){
-                return 1;
-            }
-            cadProduto(lista, n);
-        }else if(op == 2 && lista != NULL){
-            limpa_title();
-            printf("\n=== Lista de produtos ===\n");
-            listaProd(lista, n);
-        }else if(op == 3 && lista != NULL){
-            limpa_title();
-            printf("\n=== Busca de produto ===\n");
-            buscaProd(lista, n);
+        switch(op){
+            case 1:
+                lista = criarLista(&n);
+                if(lista == NULL){
+                    return 1;
+                }
+                cadProduto(lista, n);
+                break;
+            case 2:
+                if(lista == NULL){
+                    erroLista();
+                    goto inicio;
+                }
+                limpa_title();
+                printf("\n=== Lista de produtos ===\n");
+                listaProd(lista, n);
+                break;
+            case 3:
+                if(lista == NULL){
+                    erroLista();
+                    goto inicio;
+                }
+                limpa_title();
+                printf("\n=== Busca de produto ===\n");
+                buscaProd(lista, n);
         }
     }while(op != 5);
 
