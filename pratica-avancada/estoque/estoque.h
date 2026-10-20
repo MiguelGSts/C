@@ -25,5 +25,7 @@ void limpa_title();
 
 void buscaProd(prod *lista, int n);
 
+prod *ordenaLista(prod *lista, int n);
+
 
 #endif

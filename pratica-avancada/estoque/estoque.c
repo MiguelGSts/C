@@ -107,3 +107,32 @@ void buscaProd(prod *lista, int n){
     }
     getchar();
 }
+
+prod *ordenaLista(prod *lista, int n){
+    int i, j;
+    int swap;
+    prod temp;
+
+    prod *listaAlternativa = malloc(n * sizeof(prod));
+    if(listaAlternativa == NULL){
+        return NULL;
+    }
+    memcpy(listaAlternativa, lista, n * sizeof(prod));
+
+    for(i = 0; i < n-1; i++){
+        swap = 0;
+        for (j = 0; j < n-1; j++){
+            if(listaAlternativa[j].preco > listaAlternativa[j+1].preco){
+                temp = listaAlternativa[j+1];
+                listaAlternativa[j+1] = listaAlternativa[j];
+                listaAlternativa[j] = temp;
+                swap++;
+            }
+        }
+        if(swap == 0){
+            break;
+        }
+    }
+    
+    return listaAlternativa;
+}
