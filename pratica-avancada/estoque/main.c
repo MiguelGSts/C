@@ -62,6 +62,7 @@ int main(){
                 printf("=== FIM DO PROGRAMA ===\n");
                 printf("Obrigado por utilizar o programa de estoque!\n");
                 getchar();
+                break;
             default:
                 limpa_title();
                 printf("[ERRO] Selecione uma opção válida.\n");
