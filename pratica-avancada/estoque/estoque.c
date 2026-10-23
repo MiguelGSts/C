@@ -57,6 +57,7 @@ void cadProduto(prod *lista, int n){
 
         printf("Informe a quantidade em estoque do produto: ");
         scanf("%d", &lista[cont].qnt);
+        while((c = getchar()) != '\n' && c != EOF);
     }
 }
 
