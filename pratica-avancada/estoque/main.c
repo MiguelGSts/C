@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
-#ifndef _WIN32
+#ifdef _WIN32
     #include <windows.h>
 #endif
 
 
 int main(){
     setlocale(LC_ALL, ".UTF8");
-    #ifndef _WIN32
+    #ifdef _WIN32
         SetConsoleOutputCP(CP_UTF8);
     #endif
 
