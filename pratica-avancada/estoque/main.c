@@ -57,6 +57,11 @@ int main(){
                 printf("\n=== Ordem de produtos ===\n");
                 mostraOrdenada(lista, n);
                 break;
+            case 5:
+                limpa_title();
+                printf("=== FIM DO PROGRAMA ===\n");
+                printf("Obrigado por utilizar o programa de estoque!\n");
+                getchar();
             default:
                 limpa_title();
                 printf("[ERRO] Selecione uma opção válida.\n");
