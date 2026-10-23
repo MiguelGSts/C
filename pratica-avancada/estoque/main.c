@@ -47,6 +47,21 @@ int main(){
                 limpa_title();
                 printf("\n=== Busca de produto ===\n");
                 buscaProd(lista, n);
+                break;
+            case 4:
+                if(lista == NULL){
+                    erroLista();
+                    goto inicio;
+                }
+                limpa_title();
+                printf("\n=== Ordem de produtos ===\n");
+                mostraOrdenada(lista, n);
+                break;
+            default:
+                limpa_title();
+                printf("[ERRO] Selecione uma opção válida.\n");
+                getchar();
+                break;
         }
     }while(op != 5);
 

@@ -27,5 +27,7 @@ void buscaProd(prod *lista, int n);
 
 prod *ordenaLista(prod *lista, int n);
 
+void mostraOrdenada(prod *lista, int n);
+
 
 #endif

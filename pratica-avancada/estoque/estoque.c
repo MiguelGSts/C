@@ -85,7 +85,7 @@ void limpa_title(){
 }
 
 void buscaProd(prod *lista, int n){
-    int cont, i=0, c;
+    int cont, i=0;
     int resultado;
     char busca[50];
 
@@ -135,4 +135,21 @@ prod *ordenaLista(prod *lista, int n){
     }
     
     return listaAlternativa;
+}
+
+void mostraOrdenada(prod *lista, int n){
+    int cont;
+
+    prod *listaOrdenada = malloc(n * sizeof(prod));
+
+    listaOrdenada = ordenaLista(lista, n);
+    printf("=> Listagem dos produtos, do MAIOR para o MENOR.\n\n");
+    for(cont=0; cont<n; cont++){
+        printf("\n== Produto %d ==\n", (cont+1));
+        printf("=> Nome: %s\n", listaOrdenada[cont].nome);
+        printf("=> Preço: %.2f\n", listaOrdenada[cont].preco);
+        printf("=> Quantidade em estoque: %d\n", listaOrdenada[cont].qnt);
+    }
+    printf("\n=== FIM DOS PRODUTOS ===\n");
+    getchar();
 }
