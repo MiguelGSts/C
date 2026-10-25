@@ -151,6 +151,7 @@ void mostraOrdenada(prod *lista, int n){
         printf("=> Preço: %.2f\n", listaOrdenada[cont].preco);
         printf("=> Quantidade em estoque: %d\n", listaOrdenada[cont].qnt);
     }
+    free(listaOrdenada);
     printf("\n=== FIM DOS PRODUTOS ===\n");
     getchar();
 }

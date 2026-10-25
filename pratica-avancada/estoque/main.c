@@ -24,6 +24,8 @@ int main(){
         op = menu();
         switch(op){
             case 1:
+                free(lista);
+                lista = NULL;
                 lista = criarLista(&n);
                 if(lista == NULL){
                     return 1;
@@ -71,5 +73,6 @@ int main(){
         }
     }while(op != 5);
 
+    free(lista);
     return 0;
 }
